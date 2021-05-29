@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Green is the new black</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li {margin: .8em 0}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .footnote {
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+      }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      .green {color: green}
+      .big{font-size: 8em}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# .green[<sub><sup><sub><sup>✅</sup></sub></sup></sub> Green] is the new black
+Abdala Cerqueira
+.footnote[ParaíbaJS, Maio, 2021]
+
+---
+
+# Agenda
+
+- Introdução
+- Por que testar?
+- Tipos de teste
+- Como escolher o que testar?
+- Quais testes escolhi para minha pipeline?
+- _Unit_ - Teste unitário
+- _Narrow Integration_ - Teste de integração restrito
+- _Broad Integration_ - Teste de integração amplo
+- _Mutation_ - Teste de mutação
+- Live coding
+
+---
+ 
+# Introdução
+
+- Nasci em Uberlândia
+- Fui criado no DF
+- Morei 6 anos em João Pessoa
+- Estou há 3 anos em Amsterdam
+- _Let's write less code!_ Vamos escrever menos código!
+
+---
+ 
+# Por que testar?
+
+- Confiança (na criação e mudança)
+- Segurança (na criação e mudança)
+- Automação
+- Autoconfiança
+
+---
+
+# Tipos de teste
+
+.pull-left[
+ - Manual, Automático, Contínuo
+- Funcional e Não funcional
+- Unitário
+- Integração
+- Mutação
+- E2E
+]
+.pull-right[
+- Exploração
+- Regressão
+- Aceitação
+- Acessibilidade
+- Usabilidade
+- Performance (carga, _stress_, escalabilidade, volume)
+]
+
+---
+    
+# Como escolher o que testar?
+
+- Como desenvolvedores e profissionais, devemos testar tudo aquilo que está sob nossa responsabilidade 🤝
+
+---
+ 
+# Quais testes escolhi para minha pipeline?
+
+- _Pull Request_
+ - Teste unitário
+ - Teste de integração restrito
+
+- Depois de fazer o _deploy_
+ - Teste de integração amplo
+
+- Local <sub><sup>(muito falso positivo para estar na pipeline)</sup></sub>
+ - Teste mutação
+
+---
+ 
+# _Unit_ - Teste unitário
+
+> Testes onde cada unidade do sistema é testada individualmente
+
+<br>
+- Rápido
+- Cobertura de código
+
+---
+ 
+## _Narrow Integration_ - Teste de integração restrito
+
+> Testes de escopo restrito, muitas vezes não maiores do que um teste de unidade. Geralmente executados com a mesma estrutura de teste que é usada para testes unitários
+
+<br>
+- Rápido
+- Cobertura de código
+
+---
+ 
+## _Broad Integration_ - Teste de integração amplo
+
+> Exige versões reais de todos os serviços e requer um ambiente de teste dedicado e acesso à rede
+
+<br>
+- Lento
+- Repetição (_retry_) e espera (_sleep_)
+- Sem cobertura de código
+
+---
+ 
+# _Mutation_ - Teste de mutação <sub><sup>👾</sup></sub>
+
+> Modifica um programa em pequenas formas. Cada versão mutada é chamada de mutante e os testes detectam e rejeitam mutantes
+
+<br>
+- Lento
+- Possibilidade de falso positivo
+
+---
+
+class: center, middle
+
+# _Show me the code!_
+
+.big[👩‍💻]
+
+---
+
+class: center, middle
+
+# Obrigado!
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

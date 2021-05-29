@@ -1,0 +1,54 @@
+{
+  "name": "green-is-the-new-black",
+  "version": "1.0.0",
+  "description": "Code for the talk: Green is the new black",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:mutation": "npx stryker run",
+    "test:broad-integration": "jest -c jest.config.integration.js"
+  },
+  "keywords": [
+    "test",
+    "typescript",
+    "nock",
+    "unit",
+    "integration"
+  ],
+  "author": "Abdala Cerqueira",
+  "license": "MIT",
+  "dependencies": {
+    "fp-ts": "^2.10.5",
+    "io-ts": "^2.2.16"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^4.4.1",
+    "@stryker-mutator/jest-runner": "^4.4.1",
+    "@stryker-mutator/typescript-checker": "^4.4.1",
+    "@types/aws-lambda": "^8.10.73",
+    "@types/faker": "^5.1.7",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@types/node-fetch": "^2.5.10",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "aws-sdk": "^2.912.0",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.27.0",
+    "faker": "^5.5.3",
+    "jest": "^26.6.3",
+    "nock": "^13.0.11",
+    "node-fetch": "^2.6.1",
+    "serverless": "^2.43.0",
+    "serverless-webpack": "^5.5.0",
+    "ts-jest": "^26.5.6",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "checkers": ["typescript"],
+  "packageManager": "npm",
+  "testRunner": "jest",
+  "mutate": ["src/*.ts"]
+}

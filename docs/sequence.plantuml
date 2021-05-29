@@ -1,0 +1,6 @@
+title Gerador de parcelas
+
+User->Endpoint: Solicita divisao de parcelas
+Endpoint->Endpoint: Divide o valor e gera as parcelas
+Endpoint->Banco: Salva parcelas no banco
+Endpoint-->User: Retorna as parcelas geradas

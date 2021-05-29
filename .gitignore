@@ -1,0 +1,9 @@
+.idea/
+dist/
+node_modules/
+packages/**/*.js
+components/**/*.js
+config/**/*.js
+.webpack
+.serverless
+coverage/
